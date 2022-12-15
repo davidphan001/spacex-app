@@ -20,7 +20,7 @@ export default function Header() {
   const linkButton = (name) => {
     return (
       <Link
-        to={`/${name}`}
+        to={`spacex-app/${name}`}
         className="text-white link-underline text-xl lg:text-4xl"
         onClick={() => {
           setIsOpen(!isOpen);
@@ -37,7 +37,7 @@ export default function Header() {
       <header className="fixed flex px-10 w-full z-50">
         <div className="z-50">
           <Link
-            to="/"
+            to="/spacex-app"
             onClick={() => {
               setIsOpen(false);
               stopScroll(false);
