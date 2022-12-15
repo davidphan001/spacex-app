@@ -29,26 +29,35 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Homepage />}></Route>
-        <Route path="/capsules" element={<Capsules />}></Route>
-        <Route path="/cores" element={<Cores />}></Route>
-        <Route path="/crew" element={<Crew />}></Route>
-        <Route path="/crew/:id" element={<CrewPage />}></Route>
-        <Route path="/dragons" element={<Dragons />}></Route>
-        <Route path="/dragons/:id" element={<DragonPage />}></Route>
-        <Route path="/landings" element={<Landings />}></Route>
-        <Route path="/landings/:id" element={<ShipLandingPage />}></Route>
-        <Route path="/launches" element={<Launches />}></Route>
-        <Route path="/launches/:id" element={<ShipLaunchPage />}></Route>
-        <Route path="/launchpads" element={<Launchpads />}></Route>
-        <Route path="/launchpads/:id" element={<ShipLaunchpadPage />}></Route>
-        <Route path="/payloads" element={<Payloads />}></Route>
-        <Route path="/roadster" element={<Roadster />}></Route>
-        <Route path="/rockets" element={<Rockets />}></Route>
-        <Route path="/rockets/:id" element={<RocketPage />}></Route>
-        <Route path="/ships" element={<Ships />}></Route>
-        <Route path="/ships/:id" element={<ShipPage />}></Route>
-        <Route path="/starlinks" element={<Starlinks />}></Route>
+        <Route path="/spacex-app" element={<Homepage />}></Route>
+        <Route path="spacex-app/capsules" element={<Capsules />}></Route>
+        <Route path="spacex-app/cores" element={<Cores />}></Route>
+        <Route path="spacex-app/crew" element={<Crew />}></Route>
+        <Route path="spacex-app/crew/:id" element={<CrewPage />}></Route>
+        <Route path="spacex-app/dragons" element={<Dragons />}></Route>
+        <Route path="spacex-app/dragons/:id" element={<DragonPage />}></Route>
+        <Route path="spacex-app/landings" element={<Landings />}></Route>
+        <Route
+          path="spacex-app/landings/:id"
+          element={<ShipLandingPage />}
+        ></Route>
+        <Route path="spacex-app/launches" element={<Launches />}></Route>
+        <Route
+          path="spacex-app/launches/:id"
+          element={<ShipLaunchPage />}
+        ></Route>
+        <Route path="spacex-app/launchpads" element={<Launchpads />}></Route>
+        <Route
+          path="spacex-app/launchpads/:id"
+          element={<ShipLaunchpadPage />}
+        ></Route>
+        <Route path="spacex-app/payloads" element={<Payloads />}></Route>
+        <Route path="spacex-app/roadster" element={<Roadster />}></Route>
+        <Route path="spacex-app/rockets" element={<Rockets />}></Route>
+        <Route path="spacex-app/rockets/:id" element={<RocketPage />}></Route>
+        <Route path="spacex-app/ships" element={<Ships />}></Route>
+        <Route path="spacex-app/ships/:id" element={<ShipPage />}></Route>
+        <Route path="spacex-app/starlinks" element={<Starlinks />}></Route>
         <Route path="*" element={<Error />}></Route>
       </Routes>
     </BrowserRouter>
