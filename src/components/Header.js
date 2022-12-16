@@ -65,7 +65,7 @@ export default function Header() {
             : "fixed robbowen"
         }
       >
-        <ul className="max-width grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 px-5 text-center">
+        <ul className="max-width grid grid-cols-2 gap-8 md:grid-cols-2 md:gap-10 px-5 text-center">
           <li>{linkButton("Ships")}</li>
           <li>{linkButton("Crew")}</li>
           <li>{linkButton("Cores")}</li>
