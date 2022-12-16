@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import LoadingState from "../components/LoadingState";
+import { HOMEPAGE } from "./RouteInfo";
 
 export default function CrewPage() {
   const [crewInfo, setCrewInfo] = useState([]);
@@ -53,7 +54,7 @@ export default function CrewPage() {
                   </a>
                 </li>
                 <li className="text-white opacity-75 text-sm hover:opacity-100">
-                  <Link to="/crew">&larr; Back</Link>
+                  <Link to={`/${HOMEPAGE}/crew`}>&larr; Back</Link>
                 </li>
               </ul>
             </article>

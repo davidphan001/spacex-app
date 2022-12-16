@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import LoadingState from "../components/LoadingState";
+import { HOMEPAGE } from "./RouteInfo";
 
 export default function ShipLandingPage() {
   const [landingInfo, setLandingInfo] = useState(null);
@@ -65,7 +66,7 @@ export default function ShipLandingPage() {
               </li>
               <li>
                 <Link
-                  to="/landings"
+                  to={`/${HOMEPAGE}/landings`}
                   className="text-white text-sm opacity-75 hover:opacity-100"
                 >
                   &larr; Back

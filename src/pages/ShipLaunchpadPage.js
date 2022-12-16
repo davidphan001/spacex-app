@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import LoadingState from "../components/LoadingState";
+import { HOMEPAGE } from "./RouteInfo";
 
 export default function ShipLaunchpadPage() {
   const [launchpadInfo, setLaunchpadInfo] = useState(null);
@@ -60,7 +61,7 @@ export default function ShipLaunchpadPage() {
             <ul>
               <li>
                 <Link
-                  to="/launchpads"
+                  to={`/${HOMEPAGE}/launchpads`}
                   className="text-white opacity-75 text-sm hover:opacity-100"
                 >
                   &larr; Back

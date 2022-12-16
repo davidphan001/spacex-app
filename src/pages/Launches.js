@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LoadingState from "../components/LoadingState";
 import useFetch from "../hooks/useFetch";
+import { HOMEPAGE } from "./RouteInfo";
 
 export default function Launches() {
   const [data] = useFetch("https://api.spacexdata.com/v4/launches");
@@ -15,7 +16,7 @@ export default function Launches() {
           <div className="max-width grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 px-5">
             {data.map(({ id, name, links, details }) => (
               <Link
-                to={`/launches/${id}`}
+                to={`/${HOMEPAGE}/launches/${id}`}
                 key={id}
                 className="p-5 rounded-2xl bg-blue-800"
               >

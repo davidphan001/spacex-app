@@ -2,6 +2,7 @@ import React from "react";
 import useFetch from "../hooks/useFetch";
 import LoadingState from "../components/LoadingState";
 import { Link } from "react-router-dom";
+import { HOMEPAGE } from "./RouteInfo";
 
 export default function Ships() {
   const [data] = useFetch("https://api.spacexdata.com/v4/ships");
@@ -15,7 +16,7 @@ export default function Ships() {
           <article>
             <div className="max-width grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 px-5">
               {data.map(({ id, name, image, home_port }) => (
-                <Link to={`/ships/${id}`} key={id}>
+                <Link to={`/${HOMEPAGE}/ships/${id}`} key={id}>
                   <article>
                     {image ? (
                       <div className="box-zoom">
