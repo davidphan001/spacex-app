@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import LoadingState from "../components/LoadingState";
 import { format } from "date-fns";
+import { HOMEPAGE } from "./RouteInfo";
 
 export default function RocketPage() {
   const [rocketInfo, setRocketInfo] = useState(null);
@@ -87,7 +88,7 @@ export default function RocketPage() {
                 </button>
               </li>
               <Link
-                to="/rockets"
+                to={`/${HOMEPAGE}/rockets`}
                 className="text-white opacity-75 hover:opacity-100"
               >
                 &larr; Back

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import LoadingState from "../components/LoadingState";
+import { HOMEPAGE } from "./RouteInfo";
 
 export default function Dragons() {
   const [dragons, setDragons] = useState([]);
@@ -37,7 +38,7 @@ export default function Dragons() {
                     0,
                     200
                   )}...`}</p>
-                  <Link to={`/dragons/${id}`} className="btn">
+                  <Link to={`/${HOMEPAGE}/dragons/${id}`} className="btn">
                     Read More &rarr;
                   </Link>
                 </div>

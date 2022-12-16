@@ -2,6 +2,7 @@ import React from "react";
 import useFetch from "../hooks/useFetch";
 import LoadingState from "../components/LoadingState";
 import { Link } from "react-router-dom";
+import { HOMEPAGE } from "./RouteInfo";
 
 export default function Launchpads() {
   const [data] = useFetch("https://api.spacexdata.com/v4/launchpads");
@@ -27,7 +28,7 @@ export default function Launchpads() {
                     0,
                     50
                   )}...`}</p>
-                  <Link to={`/launchpads/${id}`} className="btn">
+                  <Link to={`/${HOMEPAGE}/launchpads/${id}`} className="btn">
                     Read More &rarr;
                   </Link>
                 </div>

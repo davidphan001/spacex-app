@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import LoadingState from "../components/LoadingState";
 import useFetch from "../hooks/useFetch";
+import { HOMEPAGE } from "./RouteInfo";
 
 export default function Landings() {
   const [data] = useFetch("https://api.spacexdata.com/v4/landpads");
@@ -30,7 +31,7 @@ export default function Landings() {
                       0,
                       200
                     )}...`}</p>
-                    <Link to={`/landings/${id}`} className="btn">
+                    <Link to={`/${HOMEPAGE}/landings/${id}`} className="btn">
                       Read More &rarr;
                     </Link>
                   </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import LoadingState from "../components/LoadingState";
+import { HOMEPAGE } from "./RouteInfo";
 
 export default function Crew() {
   const [crew, setCrew] = useState([]);
@@ -21,7 +22,7 @@ export default function Crew() {
         <section className="py-32">
           <div className="max-width grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 px-5">
             {crew.map(({ id, name, image }) => (
-              <Link key={id} to={`/crew/${id}`}>
+              <Link key={id} to={`/${HOMEPAGE}/crew/${id}`}>
                 <article className="relative">
                   <img
                     src={image}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import LoadingState from "../components/LoadingState";
 import { format } from "date-fns";
+import { HOMEPAGE } from "./RouteInfo";
 
 export default function ShipLaunchPage() {
   const [launchesInfo, setLaunchesInfo] = useState(null);
@@ -115,7 +116,7 @@ export default function ShipLaunchPage() {
                 )}
               </li>
               <Link
-                to="/launches"
+                to={`/${HOMEPAGE}/launches`}
                 className="text-white opacity-75 hover:opacity-100"
               >
                 &larr;Back

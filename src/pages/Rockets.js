@@ -2,6 +2,7 @@ import React from "react";
 import useFetch from "../hooks/useFetch";
 import LoadingState from "../components/LoadingState";
 import { Link } from "react-router-dom";
+import { HOMEPAGE } from "./RouteInfo";
 
 export default function Rockets() {
   const [data] = useFetch("https://api.spacexdata.com/v4/rockets");
@@ -29,7 +30,7 @@ export default function Rockets() {
                       0,
                       100
                     )}...`}</p>
-                    <Link to={`/rockets/${id}`} className="btn">
+                    <Link to={`/${HOMEPAGE}/rockets/${id}`} className="btn">
                       Read More &rarr;
                     </Link>
                   </div>

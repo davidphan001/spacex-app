@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import { HOMEPAGE } from "./RouteInfo";
 
 export default function DragonPage() {
   const [dragonInfo, setDragonInfo] = useState([]);
@@ -141,7 +142,7 @@ export default function DragonPage() {
             </li>
             <li>
               <Link
-                to="/dragons"
+                to={`/${HOMEPAGE}/dragons`}
                 className="text-white opacity-75 text-sm hover:opacity-100"
               >
                 &larr; Back
